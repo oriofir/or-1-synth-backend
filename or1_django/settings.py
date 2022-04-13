@@ -43,11 +43,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'or1',
     'rest_framework',
+    'corsheaders',  # <- add
+    'djoser',  # <- add
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # ->add
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # ->add
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
