@@ -1,4 +1,3 @@
-from turtle import delay
 from django.db import models
 
 # Create your models here.
