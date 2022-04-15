@@ -10,4 +10,4 @@ class SynthSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Synth
         fields = ('id', 'name', 'synth_type', 'filter_amount',
-                  'delay_amount', 'synth_url')
+                  'delay_amount', 'distortion_amount', 'autowah_amount', 'freeverb_amount', 'tremolo_amount', 'synth_url',)
